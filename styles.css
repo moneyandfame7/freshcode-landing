@@ -10,7 +10,10 @@ p {
   font-weight: 300;
 }
 
-/* title - 27px, divider, colors (variables) */
+.bold-text {
+  font-weight: bold;
+}
+
 .icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -38,11 +41,9 @@ p {
 }
 
 .header {
-  padding: 2.3rem 3.8rem;
-  /* width: 100%; */
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
+  padding: 2.3rem 3.8rem;
 
   > .logo {
     width: 3.8rem;
@@ -56,12 +57,12 @@ p {
   gap: 1.5rem;
 }
 
-.navigation {
+.navigation__inner {
   display: flex;
   align-items: center;
   gap: 3rem;
 
-  > a {
+  a {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
     &:hover {
@@ -126,7 +127,6 @@ p {
 .section-hero2__wrapper {
   max-width: 65vw;
   text-align: center;
-  /* margin: 10vw 0; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -183,7 +183,6 @@ p {
     line-height: 1.8rem;
   }
   > .hero3-bg {
-    /* width: 10rem; */
     position: absolute;
     right: -3rem;
     top: -6rem;
@@ -232,9 +231,14 @@ p {
   background-color: white;
   border-radius: 1rem;
   display: flex;
+  align-items: end;
   gap: 10rem;
   padding: 3rem 2rem;
   margin: 5rem 0;
+
+  img {
+    height: 18rem;
+  }
 
   > .form__container {
     display: flex;
@@ -252,4 +256,11 @@ p {
       font-family: "Montserrat", system-ui;
     }
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
 }
